@@ -1,0 +1,46 @@
+appId: io.celebe
+---
+- tapOn: "CELEBe"
+- assertVisible:
+    id: "io.celebe:id/btnLoginGoogle"
+- tapOn:
+    id: "io.celebe:id/btnLoginGoogle"
+- tapOn:
+    id: "com.google.android.gms:id/account_name"
+    index: 0
+- assertVisible: "추천"
+- assertVisible:
+    id: "io.celebe:id/ivCoinBG"
+- tapOn:
+    id: "io.celebe:id/ivCoinBG"
+- assertVisible: "영상 볼 때마다\n포인트가 쌓였어요!"
+- assertVisible:
+    id: "io.celebe:id/textCurrentPoint"
+- tapOn:
+    id: "io.celebe:id/buttonClose"
+- tapOn:
+    id: "io.celebe:id/tvFollow"
+- assertNotVisible: "팔로우"
+- tapOn: "팔로잉"
+- swipe:
+    direction: "LEFT"
+- swipe:
+    direction: "RIGHT"
+- tapOn:
+    id: "io.celebe:id/ivMenuProfile"
+- tapOn:
+    id: "io.celebe:id/tvFollower"
+- tapOn: "1 팔로잉"
+- assertVisible: "1 팔로잉"
+- tapOn:
+    id: "io.celebe:id/btnFollow"
+- tapOn:
+    id: "io.celebe:id/btnBack"
+- tapOn:
+    id: "io.celebe:id/btnSetting"
+- tapOn:
+    id: "io.celebe:id/tvLogOut"
+- tapOn:
+    id: "com.android.systemui:id/recent_apps"
+- tapOn:
+    id: "com.sec.android.app.launcher:id/clear_all"

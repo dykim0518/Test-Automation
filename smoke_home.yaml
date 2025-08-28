@@ -1,0 +1,42 @@
+appId: io.celebe
+---
+- tapOn: "CELEBe"
+- tapOn:
+    id: "io.celebe:id/ivMenuHome"
+- tapOn:
+    id: "io.celebe:id/todayMissionYet"
+    index: 0
+- assertVisible:
+    id: "io.celebe:id/tvLike"
+- tapOn:
+    id: "io.celebe:id/tvLike"
+- tapOn:
+    id: "io.celebe:id/buttonConfirm"
+- tapOn:
+    id: "io.celebe:id/ivMenuHome"
+- assertVisible:
+    id: "io.celebe:id/todayMissionDone"
+- tapOn:
+    id: "io.celebe:id/ivBanner"
+- tapOn: "05-naverPointPromotion.4315a5ac"
+- assertVisible:
+    id: "android:id/content"
+- assertVisible: "SummitButtonDisabled.c86157d0"
+- tapOn:
+    id: "io.celebe:id/btnBack"
+- assertVisible:
+    id: "io.celebe:id/tvMaxProgress"
+- assertVisible:
+    id: "io.celebe:id/tvPointValue"
+- tapOn:
+    id: "io.celebe:id/tvPointValue"
+- assertVisible: "내 지갑"
+- assertVisible:
+    id: "io.celebe:id/text_point"
+    index: 0
+- assertVisible:
+    id: "io.celebe:id/rcv_page"
+- tapOn:
+    id: "com.android.systemui:id/recent_apps"
+- tapOn:
+    id: "com.sec.android.app.launcher:id/clear_all"

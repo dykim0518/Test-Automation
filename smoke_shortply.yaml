@@ -1,0 +1,108 @@
+appId: io.celebe
+---
+- tapOn: "CELEBe"
+- tapOn:
+    id: "io.celebe:id/ivSearch"
+- inputText: "kpop_thisthat"
+- tapOn:
+    id: "io.celebe:id/tvSearch"
+- tapOn:
+    id: "io.celebe:id/tvNickName"
+- tapOn:
+    id: "io.celebe:id/imgThumbnail"
+    index: 0
+- tapOn:
+    id: "io.celebe:id/tvLike" # 1 / 팝업 삭제로 동작 중 ㅋㅋㅋ
+- swipe:
+    direction: "UP"
+- tapOn:
+    id: "io.celebe:id/tvLike" # 2 / 팝업 삭제로 동작 중 ㅋㅋㅋ
+- swipe:
+    direction: "UP"
+- tapOn:
+    id: "io.celebe:id/tvLike" # 3
+- swipe:
+    direction: "UP"
+- tapOn:
+    id: "io.celebe:id/tvLike" # 4
+- swipe:
+    direction: "UP"
+- tapOn:
+    id: "io.celebe:id/tvLike" # 5
+- swipe:
+    direction: "UP"
+- tapOn:
+    id: "io.celebe:id/tvLike" # 6
+- swipe:
+    direction: "UP"
+- tapOn:
+    id: "io.celebe:id/tvLike" # 7
+- swipe:
+    direction: "UP"
+- tapOn:
+    id: "io.celebe:id/tvLike" # 8
+- swipe:
+    direction: "UP"
+- tapOn:
+    id: "io.celebe:id/tvLike" # 9
+- swipe:
+    direction: "UP"
+- tapOn:
+    id: "io.celebe:id/tvLike" # 10
+- swipe:
+    direction: "UP"
+- tapOn:
+    id: "io.celebe:id/tvLike" # 11
+- swipe:
+    direction: "UP"
+- tapOn:
+    id: "io.celebe:id/tvLike" # 12
+- swipe:
+    direction: "UP"
+- tapOn:
+    id: "io.celebe:id/tvLike" # 13
+- swipe:
+    direction: "UP"
+- tapOn:
+    id: "io.celebe:id/tvLike" # 14
+- assertVisible: "오늘의 숏플리"
+- tapOn:
+    id: "io.celebe:id/inputContainer"
+- tapOn: "ㅅ"
+- tapOn: "ㅍ"
+- tapOn: "ㄹ"
+- tapOn:
+    id: "io.celebe:id/buttonConfirm"
+- assertVisible: "숏플리 생성 완료!"
+- assertVisible: "+50 포인트 획득!"
+- tapOn: "+50 포인트 획득!"
+- tapOn:
+    id: "io.celebe:id/ivBack"
+- tapOn:
+    id: "io.celebe:id/btnBack"
+- tapOn:
+    id: "io.celebe:id/imgBack"
+- tapOn:
+    id: "io.celebe:id/ivMenuProfile"
+- tapOn:
+    id: "android:id/icon"
+    index: 1
+- assertVisible:
+    id: "io.celebe:id/imgThumbnail"
+- tapOn:
+    id: "io.celebe:id/imgThumbnail"
+- assertVisible: "#\_ㅅㅍㄹ"
+- assertVisible:
+    id: "io.celebe:id/indicatorScrollView"
+- tapOn:
+    id: "io.celebe:id/btnEditShortply"
+- tapOn:
+    id: "io.celebe:id/btnDelete"
+- tapOn:
+    id: "io.celebe:id/btnOK"
+- assertVisible: "숏플리를 생성해보세요"
+- assertVisible: "추천 영상 보러가기"
+- tapOn:
+    id: "com.android.systemui:id/recent_apps"
+- tapOn:
+    id: "com.sec.android.app.launcher:id/clear_all"

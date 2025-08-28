@@ -1,0 +1,39 @@
+appId: io.celebe
+---
+- tapOn: "CELEBe"
+- tapOn:
+    id: "io.celebe:id/ivMenuCamera"
+- tapOn:
+    id: "com.sec.android.gallery3d:id/thumbnail_preview_layout"
+- tapOn:
+    id: "io.celebe:id/tvDone"
+- tapOn:
+    id: "io.celebe:id/editText"
+- inputText: "TestAutomation"
+- tapOn:
+    point: "50%,49%"
+- tapOn:
+    id: "io.celebe:id/btnAction"
+- retry:
+    maxRetries: 10
+    commands:
+    - tapOn:
+        id: "io.celebe:id/imgThumbnail"
+- assertVisible:
+    id: "io.celebe:id/imgThumbnail"
+- extendedWaitUntil:
+    visible: "0"
+    timeout: 120000
+- tapOn:
+    id: "io.celebe:id/imgThumbnail"
+- assertVisible: "TestAutomation"
+- tapOn:
+    id: "io.celebe:id/ivMore"
+- tapOn:
+    id: "io.celebe:id/tvDelete"
+- tapOn: "dialogNegativeButton"
+- assertVisible: "게시물을 올리고\n포인트를 모아보세요"
+- tapOn:
+    id: "com.android.systemui:id/recent_apps"
+- tapOn:
+    id: "com.sec.android.app.launcher:id/clear_all"

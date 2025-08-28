@@ -1,0 +1,36 @@
+appId: io.celebe
+---
+- tapOn: "CELEBe"
+- tapOn: "팔로잉"
+- tapOn:
+    id: "io.celebe:id/ivSearch"
+- tapOn:
+    id: "io.celebe:id/tvKeyword"
+    index: 0
+- tapOn:
+    id: "io.celebe:id/imgThumbnail"
+    index: 0
+- tapOn:
+    id: "io.celebe:id/tvReply"
+    index: 0
+- tapOn:
+    id: "io.celebe:id/viewBorder"
+- inputText: "Looks Good to Me!!"
+- tapOn:
+    id: "io.celebe:id/buttonSend"
+- tapOn:
+    id: "io.celebe:id/viewOverlay"
+    index: 0
+- assertVisible: "Looks Good to Me!!"
+- tapOn:
+    id: "io.celebe:id/iconLike"
+    index: 0
+- longPressOn:
+    id: "io.celebe:id/viewOverlay"
+    index: 0
+- tapOn:
+    id: "io.celebe:id/buttonDelete"
+- tapOn:
+    id: "com.android.systemui:id/recent_apps"
+- tapOn:
+    id: "com.sec.android.app.launcher:id/clear_all"
